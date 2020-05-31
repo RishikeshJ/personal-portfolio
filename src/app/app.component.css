@@ -1,0 +1,86 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  
+.container{
+    padding-top: 4%;
+    background-color: transparent;
+}
+
+.mat-toolbar{
+  background-color: transparent;
+}
+
+.img-container{
+  width: 70%;
+  
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.p { word-break: break-all }
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.panel{
+  background-color: transparent;
+  border: none;
+}
+
+.panel-body{
+  text-align: center;
+  color:white;
+}
+
+body, html {
+  height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/tina-dawson-Kim9COAIEGc-unsplash.jpg");
+
+/* Set a specific height */
+height: 50%;
+
+/* Position and center the image to scale nicely on all screens */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+}
+
+.section{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  
+  align-content: center;
+}
+
+/* .mat-divider {
+  width: 60%;
+  text-align: center;
+} */

@@ -29,13 +29,13 @@
   </div>
   </div>
 
-  <div class="section">
+
     <h1> My Recent Projects</h1>
-    <mat-divider  style="width: 60%;"></mat-divider>
-  </div>
+    <mat-divider></mat-divider>
+
 
   <div class="container"
-  fxLayout
+  fxLayout="row"
   fxLayout.xs="column"
   fxLayoutAlign="center"
   fxLayoutGap="5%"
@@ -46,9 +46,9 @@
       <mat-card-title>Lean Jobs</mat-card-title>
       <mat-card-subtitle>Android Application</mat-card-subtitle>
     </mat-card-header>
-    <div class="img-container">
+
       <img mat-card-image src="../assets/Android_symbol_green_RGB.png" alt="Android Icon">
-    </div>
+
     <mat-card-content>
   
       <mat-expansion-panel [expanded]="1" class="mat-elevation-z0">
@@ -72,9 +72,9 @@
     <mat-card-title>Secure Share</mat-card-title>
     <mat-card-subtitle>Angular Web Application</mat-card-subtitle>
   </mat-card-header>
-  <div class="img-container">
+
     <img mat-card-image src="../assets/angular.png" alt="Angular Icon"> 
-  </div>
+
   <mat-card-content>
   
     <mat-expansion-panel [expanded]="1" class="mat-elevation-z0">
@@ -98,9 +98,9 @@
     <mat-card-title>Mavs Catering</mat-card-title>
     <mat-card-subtitle>Java Application</mat-card-subtitle>
   </mat-card-header>
-  <div class="img-container">
+
     <img mat-card-image src="../assets/Android_symbol_green_RGB.png" alt="Placeholder Icon">
-  </div>
+
   <mat-card-content>
   
     <mat-expansion-panel [expanded]="1" class="mat-elevation-z0">
@@ -124,7 +124,41 @@
 
 </div >
 
-<div class="card card-cascade wider">
+<div class="container"
+  fxLayout
+  fxLayout.xs="column"
+  fxLayoutAlign="center"
+  fxLayoutGap="0%"
+  fxLayoutGap.xs="0">
+  <mat-card class="child-1">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Ibras</mat-card-title>
+      <mat-card-subtitle>PHP Laravel Application</mat-card-subtitle>
+    </mat-card-header>
+
+      <img mat-card-image src="../assets/laravel-logo.png" alt="Android Icon">
+
+    <mat-card-content>
+  
+      <mat-expansion-panel [expanded]="1" class="mat-elevation-z0">
+        <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px;"></mat-expansion-panel-header>
+      
+        <p>
+         
+          Ibras is a web application aimed at simulating an online food delivey system. The user could order items and maintain a cart and
+the management could add items or tend to the orders as necessary. The application was built using PHP Laravel and MySQL. 
+        </p>
+      </mat-expansion-panel>
+      
+      </mat-card-content>
+    <mat-card-footer>
+      <button mat-button>GitHub</button>
+    </mat-card-footer>
+  </mat-card>
+</div>
+
+<!-- <div class="card card-cascade wider">
 
 
 <div class="container"
@@ -161,10 +195,10 @@ the management could add items or tend to the orders as necessary. The applicati
 </mat-card-footer>
 </mat-card>
 
-</div>
+</div> -->
 
 
 
   
-</div>
+<!-- </div> -->
 

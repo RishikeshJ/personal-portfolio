@@ -74,13 +74,29 @@ color: white;
 
 .section{
   margin: auto;
-  width: 50%;
   padding: 10px;
-  
   align-content: center;
 }
 
-/* .mat-divider {
-  width: 60%;
+h1{
   text-align: center;
-} */
+}
+
+mat-card{
+  width: 400px;
+  height: auto;
+}
+
+.mat-card-image{
+  
+  background-size: cover;
+  align-items: center;
+}
+
+img {  
+  object-position: center; /* this centers and crops the image so that it doesn't break the aspect ratio */
+}
+
+mat-expansion-panel{
+  padding-top: 5%;
+}

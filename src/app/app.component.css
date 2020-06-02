@@ -87,8 +87,7 @@ h2{
 }
 
 mat-card{
-  width: 30%;
-  height: 30%;
+padding-bottom: 5%;
 }
 
 .mat-card-image{

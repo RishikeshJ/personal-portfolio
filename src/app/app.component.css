@@ -89,7 +89,10 @@ h2{
 mat-card{
 padding-bottom: 5%;
 }
-
+.mat-dialog-container{
+  width: 500px;
+  height: 500px;
+}
 .mat-card-image{
   
   background-size: cover;
@@ -154,4 +157,12 @@ a{
 svg{
   height: 30%;
   width: 10%;
+}
+
+.padding{
+  padding-bottom: 15%;
+}
+
+.soundcloud{
+ 
 }

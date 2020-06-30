@@ -1,6 +1,8 @@
+
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 <!-- Photo by Tina Dawson on Unsplash -->
 
 <div class="hero-image">
@@ -21,119 +23,132 @@
       <div class="panel-body">
         <h3> Rishikesh Joshi </h3>
         <!-- <p> I am a student at University of Texas at Arlington.  -->
-        <p> I am a student at University of Texas at Arlington.<br>
-          Random text which I will decide later, lets see if this shows up correctly</p>
+        <p> Software Engineer | Musician | Writer <br>
+          </p>
       </div>
     </div>
   </div>
 </div>
 <h2> My Recent Projects</h2>
 <mat-divider></mat-divider>
-<div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="4%" fxLayoutGap.xs="0">
-  <mat-card (click)="openDialog('e')" class="child-1">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Lean Jobs</mat-card-title>
-      <mat-card-subtitle>Android Application</mat-card-subtitle>
-    </mat-card-header>
-    <div class="img-cont-small">
-      <img mat-card-image src="../assets/Android_symbol_green_RGB.png" alt="Android Icon">
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <mat-card (click)="openDialog()" class="child-2">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Secure Share</mat-card-title>
+          <mat-card-subtitle>Angular Web Application</mat-card-subtitle>
+        </mat-card-header>
+        <div class="img-cont">
+          <img mat-card-image src="../assets/angular.png" alt="Angular Icon">
+        </div>
+        <mat-card-content>
+          <mat-expansion-panel class="mat-elevation-z0">
+            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px;"></mat-expansion-panel-header>
+            <p>
+              Secure share is a web application, built using Angular 7 and MySQL stack. The project was to understand the
+              security
+              vulnerabilities that a web application can face. The interface aimed at providing a social platform for
+              uploading images and
+              commenting on the said posts.
+            </p>
+            <mat-card-footer>
+              <a mat-button href="https://github.com/RishikeshJ/SecShare">GitHub</a>
+            </mat-card-footer>
+          </mat-expansion-panel>
+        </mat-card-content>
+      </mat-card>
     </div>
-    <mat-card-content>
-      <mat-expansion-panel class="mat-elevation-z0">
-        <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px;"></mat-expansion-panel-header>
-        <p>
-          Lean Jobs is an app built for an NGO in Spain, the application aided in the process of job recruitment.
-          Users could upload their resume's and apply for jobs that suited their roles. The management module could
-          schedule the process of interview and post jobs and job details.
-        </p>
-        <mat-card-footer>
-          <a mat-button href="https://github.com/RishikeshJ/leanjobs">GitHub</a>
-        </mat-card-footer>
-      </mat-expansion-panel>
-    </mat-card-content>
-  </mat-card>
-  <br>
-  <mat-card (click)="openDialog()" class="child-2">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Secure Share</mat-card-title>
-      <mat-card-subtitle>Angular Web Application</mat-card-subtitle>
-    </mat-card-header>
-    <div class="img-cont">
-      <img mat-card-image src="../assets/angular.png" alt="Angular Icon">
+    <div class="col-sm">
+      <mat-card (click)="openDialog('e')" class="child-1">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Lean Jobs</mat-card-title>
+          <mat-card-subtitle>Android Application</mat-card-subtitle>
+        </mat-card-header>
+        <div class="img-cont-small">
+          <img mat-card-image src="../assets/Android_symbol_green_RGB.png" alt="Android Icon">
+        </div>
+        <mat-card-content>
+          <mat-expansion-panel class="mat-elevation-z0">
+            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px;"></mat-expansion-panel-header>
+            <p>
+              Lean Jobs is an app built for an NGO in Spain, the application aided in the process of job recruitment.
+              Users could upload their resume's and apply for jobs that suited their roles. The management module could
+              schedule the process of interview and post jobs and job details.
+            </p>
+            <mat-card-footer>
+              <a mat-button href="https://github.com/RishikeshJ/leanjobs">GitHub</a>
+            </mat-card-footer>
+          </mat-expansion-panel>
+        </mat-card-content>
+      </mat-card>
     </div>
-    <mat-card-content>
-      <mat-expansion-panel class="mat-elevation-z0">
-        <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px;"></mat-expansion-panel-header>
-        <p>
-          Secure share is a web application, built using Angular 7 and MySQL stack. The project was to understand the
-          security
-          vulnerabilities that a web application can face. The interface aimed at providing a social platform for
-          uploading images and
-          commenting on the said posts.
-        </p>
-        <mat-card-footer>
-          <a mat-button href="https://github.com/RishikeshJ/SecShare">GitHub</a>
-        </mat-card-footer>
-      </mat-expansion-panel>
-    </mat-card-content>
-  </mat-card>
-  <br>
-  <mat-card class="child-3">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Mavs Catering</mat-card-title>
-      <mat-card-subtitle>Java Application</mat-card-subtitle>
-    </mat-card-header>
-    <div class="img-cont-small">
-      <img mat-card-image src="../assets/Android_symbol_green_RGB.png" alt="Placeholder Icon">
+    <div class="col-sm">
+      <mat-card class="child-3">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Mavs Catering</mat-card-title>
+          <mat-card-subtitle>Java Application</mat-card-subtitle>
+        </mat-card-header>
+        <div class="img-cont-small">
+          <img mat-card-image src="../assets/Android_symbol_green_RGB.png" alt="Placeholder Icon">
+        </div>
+        <mat-card-content>
+          <mat-expansion-panel class="mat-elevation-z0">
+            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px;"></mat-expansion-panel-header>
+            <p>
+              Mavs catering is an application designed to handle reservations for facilities around the UTA Campus, this
+              application was used for
+              Advanced Software Testing course that utilized software engineering concepts as well as software testing
+              concepts.
+            </p>
+            <mat-card-footer>
+              <a mat-button href="https://github.com/RishikeshJ/mavs_catering">GitHub</a>
+            </mat-card-footer>
+          </mat-expansion-panel>
+        </mat-card-content>
+      </mat-card>
     </div>
-    <mat-card-content>
-      <mat-expansion-panel class="mat-elevation-z0">
-        <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px;"></mat-expansion-panel-header>
-        <p>
-          Mavs catering is an application designed to handle reservations for facilities around the UTA Campus, this
-          application was used for
-          Advanced Software Testing course that utilized software engineering concepts as well as software testing
-          concepts.
-        </p>
-        <mat-card-footer>
-          <a mat-button href="https://github.com/RishikeshJ/mavs_catering">GitHub</a>
-        </mat-card-footer>
-      </mat-expansion-panel>
-    </mat-card-content>
-  </mat-card>
-  <br>
-  <mat-card class="child-1">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Ibras</mat-card-title>
-      <mat-card-subtitle>PHP Laravel Application</mat-card-subtitle>
-    </mat-card-header>
-    <div class="img-cont">
-      <img mat-card-image src="../assets/laravel-logo.png" alt="Android Icon">
-    </div>
-    <mat-card-content>
-      <mat-expansion-panel class="mat-elevation-z0">
-        <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px;"></mat-expansion-panel-header>
-        <p>
-          Ibras is a web application aimed at simulating an online food delivey system. The user could order items and
-          maintain a cart and
-          the management could add items or tend to the orders as necessary. The application was built using PHP Laravel
-          and MySQL.
-        </p>
-        <mat-card-footer>
-          <a mat-button href="https://github.com/RishikeshJ/wdmp5">GitHub</a>
-        </mat-card-footer>
-      </mat-expansion-panel>
-    </mat-card-content>
-  </mat-card>
-  <br>
+  </div>
 </div>
-<div class="padding">
-  
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-sm-12">
+      <mat-card class="child-1">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Ibras</mat-card-title>
+          <mat-card-subtitle>PHP Laravel Application</mat-card-subtitle>
+        </mat-card-header>
+        <div class="img-cont">
+          <img mat-card-image src="../assets/laravel-logo.png" alt="Android Icon">
+        </div>
+        <mat-card-content>
+          <mat-expansion-panel class="mat-elevation-z0">
+            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px;"></mat-expansion-panel-header>
+            <p>
+              Ibras is a web application aimed at simulating an online food delivey system. The user could order items and
+              maintain a cart and
+              the management could add items or tend to the orders as necessary. The application was built using PHP Laravel
+              and MySQL.
+            </p>
+            <mat-card-footer>
+              <a mat-button href="https://github.com/RishikeshJ/wdmp5">GitHub</a>
+            </mat-card-footer>
+          </mat-expansion-panel>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
 </div>
+
+
+<span class="padding"></span>
 <br>
 <br>
 <mat-divider></mat-divider>
@@ -173,5 +188,5 @@
   </a>
 </div>
 
-<button mat-button (click)="openDialog()">Open dialog</button>
+
 

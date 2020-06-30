@@ -146,6 +146,23 @@ mat-expansion-panel{
 
 }
 
+.iconFrontEnd{
+  background: url(https://img.icons8.com/material/24/000000/resume-website.png) no-repeat;
+  border: none;
+  display:inline-block;
+}
+
+.width-center{
+  width: 50%;
+}
+
+.h4, h4 {
+  font-size: 15px;
+}
+
+.skills{
+  text-align: left;
+}
 a{
  
   height: 20%;

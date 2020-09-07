@@ -14,7 +14,7 @@
         <a mat-button (click)="openDialog('About')"><h4>About</h4> </a>
         <!-- <a mat-button [routerLink]="'/projects'"> Projects </a>
         <a mat-button [routerLink]="'/contact'"> Contact </a> -->
-        <!-- <a href="../assets/Rishikesh Joshi Resume.pdf" mat-button> <h4> Resume </h4> </a> -->
+        <a href="../assets/Rishikesh Joshi Resume.pdf" mat-button> <h4> Resume </h4> </a>
       </div>
     </mat-toolbar-row>
   </mat-toolbar>
@@ -37,54 +37,63 @@
 
 <div class="container"><div class = "width-center">
   <div class="row justify-content-center">
-    <div class="col-sm-2 col-md-offset-1">
-      <div class="header-img" style="text-align: left;">
-        <img src="https://img.icons8.com/carbon-copy/100/000000/resume-website.png" style="width: 100%;border:0;"/>
-        <h3 style="text-align: left;"> Frontend </h3>
-      </div>
-      <!-- FrontEnd -->
-      <div class="skills">
-        <h4> Angualr </h4>
-        <h4> HTML5 </h4>
-        <h4> Bootstrap </h4>
-        <h4> CSS </h4>
-      </div>
-    </div>
-    <div class="col-sm-2 col-sm-offset-1">
-      <div class="header-img">
-        <img src="https://img.icons8.com/material-two-tone/100/000000/open-parcel.png" style="width: 100%;border:0;"/>
-        <h3 style="text-align: left;"> Backend </h3>
-      </div>
-      <!-- back end -->
-      <div class="skills">
-        <h4> .NET Core </h4>
-        <h4> PHP </h4>
-        <h4> Laravel </h4>
+    <div class="col-sm-3">
+      <div class="mr-5">
+        <div class="header-img" >
+          <img src="../assets/screen.png" style="width: 100%;border:0;"/>
+          <h3 style="text-align: left;"> Frontend </h3>
+        </div>
+        <!-- FrontEnd -->
+        <div class="skills">
+          <h4> Angualr </h4>
+          <h4> HTML5 </h4>
+          <h4> Bootstrap </h4>
+          <h4> CSS </h4>
+        </div>
       </div>
     </div>
-    <div class="col-sm-2 col-sm-offset-1">
-      <div class="header-img">
-        <img src="https://img.icons8.com/ios/100/000000/laptop-coding.png" style="width: 100%;border:0;"/>
-        <h3 style="text-align: left;"> Languages </h3>
+    <div class="col-sm-3 ">
+      <div class="mr-5">
+        <div class="header-img">
+          <img src="https://img.icons8.com/material-two-tone/100/000000/open-parcel.png" style="width: 100%;border:0;"/>
+          <h3 style="text-align: left;"> Backend </h3>
+        </div>
+        <!-- back end -->
+        <div class="skills">
+          <h4> .NET Core </h4>
+          <h4> PHP </h4>
+          <h4> Laravel </h4>
+        </div>
       </div>
-      <!-- languages -->
-      <div class="skills">
-        <h4> C# </h4>
-        <h4> SQL </h4>
-        <h4> Typescript </h4>
+      </div>
+
+    <div class="col-sm-3 ">
+      <div class="mr-5">
+        <div class="header-img">
+          <img src="https://img.icons8.com/ios/100/000000/laptop-coding.png" style="width: 100%;border:0;"/>
+          <h3 style="text-align: left;"> Languages </h3>
+        </div>
+        <!-- languages -->
+        <div class="skills">
+          <h4> C# </h4>
+          <h4> SQL </h4>
+          <h4> Typescript </h4>
+        </div>
       </div>
     </div>
-    <div class="col-sm-2 col-sm-offset-1">
-      <div class="header-img">
-        <img src="https://img.icons8.com/material/100/000000/administrative-tools--v1.png" style="width: 100%;border:0;"/>
-        <h3 style="text-align: left;"> Tools </h3>
-      </div>
-      <!-- Tools -->
-      <div class="skills">
-        <h4> Git </h4>
-        <h4> Jira </h4>
-        <h4> Selenium </h4>
-        <h4> Test kits </h4>
+    <div class="col-sm-3">
+      <div class="mr-5">
+        <div class="header-img">
+          <img src="../assets/icons8-toolbox-100.png" style="width: 100%;border:0;"/>
+          <h3 style="text-align: left;"> Tools </h3>
+        </div>
+        <!-- Tools -->
+        <div class="skills">
+          <h4> Git </h4>
+          <h4> Jira </h4>
+          <h4> Selenium </h4>
+          <h4> Test kits </h4>
+        </div>
       </div>
     </div>
   </div>
@@ -127,6 +136,7 @@
         </mat-card-content>
       </mat-card>
     </div>
+    <br>
     <div class="col-sm">
       <mat-card (click)="openDialog('e')" class="child-1">
         <mat-card-header>
@@ -152,6 +162,7 @@
         </mat-card-content>
       </mat-card>
     </div>
+    <br>
     <div class="col-sm">
       <mat-card class="child-3">
         <mat-card-header>
@@ -191,7 +202,7 @@
           <mat-card-subtitle>PHP Laravel Application</mat-card-subtitle>
         </mat-card-header>
         <div class="img-cont-small">
-          <img mat-card-image src="../assets/laravel-logo.png" alt="Android Icon">
+          <img mat-card-image src="../assets/laravel-brands.svg" style="height: 113%; width: 113%;">
         </div>
         
         <mat-card-content>
@@ -205,6 +216,33 @@
             </p>
             <mat-card-footer>
               <a mat-button href="https://github.com/RishikeshJ/wdmp5">GitHub</a>
+            </mat-card-footer>
+          </mat-expansion-panel>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <br>
+    <div class="col-md-4 col-sm-12">
+      <mat-card class="child-1">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Counter Game</mat-card-title>
+          <mat-card-subtitle>PHP Laravel Application</mat-card-subtitle>
+        </mat-card-header>
+        <div class="img-cont-small">
+          <img mat-card-image src="../assets/python-brands.svg" style="height: 100%; width: 100%;" alt="Android Icon">
+        </div>
+        
+        <mat-card-content>
+          <mat-expansion-panel class="mat-elevation-z0">
+            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px;"></mat-expansion-panel-header>
+            <p>
+              Counter Game was part of a live coding quiz. A game where two players could concurrently play a guessing game.
+              A random number would be generated and allocated to these profiles and the players would get five chances to guess
+              the number. They would get clues if the number was less than or greater than the allocated number. 
+            </p>
+            <mat-card-footer>
+              <a [disabled]="true" mat-button href="https://github.com/RishikeshJ/wdmp5">GitHub</a>
             </mat-card-footer>
           </mat-expansion-panel>
         </mat-card-content>
@@ -255,17 +293,25 @@
 </div>
 
 <mat-divider></mat-divider>
-<br>
-<br>
-<div class="icon-references">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h5>Icons:</h5>
+
+
+<div class="col-md-12 col-sm-12">
+  <mat-card class="child-1"  >
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-subtitle>Icon References</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-expansion-panel class="mat-elevation-z0">
+        <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px;"></mat-expansion-panel-header>
         <a href="https://icons8.com/icon/0jTdOE7fTwMb/resume-website">Resume Website icon by Icons8</a>
         <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-      </div>
-    </div>
-  </div>
+        <a target="_blank" href="https://icons8.com/icons/set/screen-wiper">Wiper icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+        <mat-card-footer>
+        </mat-card-footer>
+      </mat-expansion-panel>
+    </mat-card-content>
+  </mat-card>
 </div>
+

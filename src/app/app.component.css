@@ -43,10 +43,15 @@
 .panel-body{
   text-align: center;
   color:white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 body, html {
   height: 100%;
+
 }
 
 /* The hero image */
@@ -55,7 +60,7 @@ body, html {
 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/20190623_091329.jpg");
 background-attachment: fixed;
 /* Set a specific height */
-height: 70%;
+height: 100%;
 
 /* Position and center the image to scale nicely on all screens */
 background-position: center;

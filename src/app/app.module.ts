@@ -4,7 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent, DialogContentExampleDialogComponent, DialogContentAboutPage } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule, MatCardModule, MatDialogModule} from '@angular/material';
+import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule,
+        MatCardModule, MatDialogModule, MatChipsModule} from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { NgImageSliderModule } from 'ng-image-slider';
@@ -25,6 +26,7 @@ import { NgImageSliderModule } from 'ng-image-slider';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatSidenavModule,
+    MatChipsModule,
     MatListModule,
     MatDialogModule,
     MatButtonModule,

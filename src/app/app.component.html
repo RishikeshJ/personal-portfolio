@@ -24,8 +24,9 @@
         <!-- <p> I am a student at University of Texas at Arlington.  -->
         <h3>Software Engineer | Angular JS | .NET Framework</h3>
         <div class="">
-          <button class="btn btn-primary mt-4">View Work</button>
-          <button class="btn btn-secondary mt-4 ml-4">Contact me</button>
+          <button class="btn btn-primary mt-4" style="background-color: #1d2d50;" (click)="onWorkClick()">View Work</button>
+          <a href="../assets/Rishikesh Joshi Resume.pdf" class="btn btn-primary mt-4 ml-4" style="background-color: #1d2d50;">Resume</a>
+          <button class="btn btn-primary mt-4 ml-4" style="background-color: #1d2d50;" (click)="onContactClick()">Contact me</button>
         </div>
       </div>
     </div>
@@ -101,12 +102,12 @@
 <br />
 <br />
 <br />
-
-<h2 ref=" recentProjs">My Recent Projects</h2>
+<br #work>
+<h2 ref="recentProjs" >My Recent Projects</h2>
 <mat-divider></mat-divider>
 <br />
 
-<div class="container">
+<div class="container" >
   <div class="row justify-content-center">
     <div class="col-sm">
       <mat-card (click)="openDialog()" class="child-2" style="background-color: #e2f3f5;">
@@ -288,7 +289,7 @@
 <br />
 <br />
 <mat-divider></mat-divider>
-<br />
+<br #contact>
 <h2>Find me at!</h2>
 <br />
 <!--Reference : https://iconmonstr.com/twitter-3-svg/ -->
@@ -327,32 +328,3 @@
   </a>
 </div>
 
-<div class="col-md-12 col-sm-12">
-  <mat-card class="child-1" style="box-shadow: none !important; padding: 0px">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-subtitle>Icon References</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
-      <mat-expansion-panel class="mat-elevation-z0" style="padding: 0px">
-        <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px"></mat-expansion-panel-header>
-        <a href="https://icons8.com/icon/0jTdOE7fTwMb/resume-website">Resume Website icon by Icons8</a>
-        <div>
-          Icons made by
-          <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
-          from
-          <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-        </div>
-        <div>
-          Icons made by
-          <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
-          from
-          <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-        </div>
-        <a target="_blank" href="https://icons8.com/icons/set/screen-wiper">Wiper icon</a>
-        icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-        <mat-card-footer> </mat-card-footer>
-      </mat-expansion-panel>
-    </mat-card-content>
-  </mat-card>
-</div>

@@ -1,4 +1,4 @@
-import { Component, NgModule } from "@angular/core";
+import { Component, ElementRef, NgModule, ViewChild } from "@angular/core";
 import { MatDialog, MatDialogModule } from "@angular/material/dialog";
 
 @Component({
@@ -9,13 +9,20 @@ import { MatDialog, MatDialogModule } from "@angular/material/dialog";
 @NgModule({
   imports: [MatDialogModule, MatDialog],
 })
+
 export class AppComponent {
+  @ViewChild('work', {static: false})
+  work: ElementRef;
+  @ViewChild('contact', {static: false})
+  contact: ElementRef;
+  
   title = "personal-porfolio";
   frontEndSkills = ["Angular", "HTML5", "Bootstrap", "CSS"];
   BackEndSkills = ['.NET Core', 'PHP', 'Laravel','Flask'];
   LanguageSkills = ['C#', 'SQL', 'Typescript','Node.Js'];
   ToolSkills = ['Git','Jira','Selenium','Figma','Postman']
   constructor(public dialog: MatDialog) {}
+  
 
   openDialog(e: string) {
     console.log(e, "this is the log");
@@ -30,6 +37,16 @@ export class AppComponent {
         console.log(`Dialog result: ${result}`);
       });
     }
+  }
+
+
+
+  onWorkClick() {
+    this.work.nativeElement.scrollIntoView({behavior: 'smooth'});
+  }
+
+  onContactClick() {
+    this.contact.nativeElement.scrollIntoView({behavior: 'smooth'});
   }
 }
 

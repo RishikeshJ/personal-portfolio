@@ -48,6 +48,10 @@ export class AppComponent {
   onContactClick() {
     this.contact.nativeElement.scrollIntoView({behavior: 'smooth'});
   }
+
+  onResumeClick() {
+    window.location.href = '../assets/Rishikesh Joshi Resume.pdf';
+  }
 }
 
 @Component({

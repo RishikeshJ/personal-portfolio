@@ -1,6 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.google.com/specimen/Lora?selection.family=Lora:ital@1|MuseoModerno:wght@300#standard-styles');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
+html,
+body {
+  height: 100%;
+  /* background-color:#effafa; */
+}
+body * {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
 
-html, body { height: 100%; }
-body *{ margin: 0; font-family: 'Lora', serif; }
+.skills-icon {
+  height: 5em;
+}
+
+.card-with-shadow {
+  background: #e2f3f5;
+  border-radius: 2px;
+  display: inline-block;
+  margin: 1rem;
+  position: relative;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+mat-chip {
+  background-color: black;
+}

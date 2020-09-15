@@ -1,8 +1,3 @@
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
 <!-- Photo by Tina Dawson on Unsplash -->
 
 <div class="hero-image">
@@ -11,205 +6,184 @@
       <!-- <h1> Rishikesh Joshi </h1> -->
       <span class="example-spacer"></span>
       <div>
-        <a mat-button (click)="openDialog('About')"><h4>About</h4> </a>
+        <a mat-button (click)="openDialog('About')">
+          <h4>About</h4>
+        </a>
         <!-- <a mat-button [routerLink]="'/projects'"> Projects </a>
         <a mat-button [routerLink]="'/contact'"> Contact </a> -->
-        <a href="../assets/Rishikesh Joshi Resume.pdf" mat-button> <h4> Resume </h4> </a>
+        <a href="../assets/Rishikesh Joshi Resume.pdf" mat-button>
+          <h4>Resume</h4>
+        </a>
       </div>
     </mat-toolbar-row>
   </mat-toolbar>
   <div class="container">
     <div class="panel panel-default">
-      <div class="panel-body">
-        <br>
-        <br>
-        <h2> Rishikesh Joshi </h2>
+      <div class="panel-body mt-4">
+        <h2>Rishikesh Joshi</h2>
         <!-- <p> I am a student at University of Texas at Arlington.  -->
-        <h3> Software Engineer | Musician | Writer <br>
-        </h3>
+        <h3>Software Engineer | Angular JS | .NET Framework</h3>
+        <div class="">
+          <button class="btn btn-primary mt-4">View Work</button>
+          <button class="btn btn-secondary mt-4 ml-4">Contact me</button>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
-<h2> Skills </h2>
+<br>
+<h2>Skills</h2>
 <mat-divider></mat-divider>
 <div class="container">
-<div class="row justify-content-center">
-  <div class="col-sm-10" style="align-items: center;">
-    <div class="col-sm-1  mr-5 ml-4">
-      <img src="../assets/laptop-code-solid.svg" style="width: 150%; padding-top: 50%;"/>
-    </div>
-    <div class="col-sm-4 mr-5">
-      <div>
-        <div>
-          <h3 style="text-align: left;"> Frontend </h3>
+  <div class="row px-0 d-flex mb-5 justify-content-between" style="width: 100%;">
+    <div class="col-md-5 col-12 my-4 px-5 mx-auto card-with-shadow mb-4 py-3" style="height:100% ;">
+      <div class="row" style="height:100%;">
+        <div class="col-md-4 col-12 d-flex align-items-md-center justify-content-center" style="width:100%;">
+          <img class="skills-icon" src="../assets/laptop-code-solid.svg" />
         </div>
-        <!-- FrontEnd -->
-        <div class="skills">
-          <mat-chip-list>
-            <mat-chip>Angular</mat-chip>
-            <mat-chip>HTML5</mat-chip>
-            <mat-chip>Bootstrap</mat-chip>
-            <mat-chip>CSS</mat-chip>
-         </mat-chip-list>
+        <div class="col-md-8 col-12">
+          <h2 class="mt-md-2 mt-sm-2" style="text-align: left;">Frontend</h2>
+          <div class="skills mt-3" style="padding-left: 1px;">
+            <mat-chip-list>
+              <mat-chip *ngFor="let skill of frontEndSkills" style="background-color:#63b7af; color: white">{{ skill }}</mat-chip>
+            </mat-chip-list>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="col-sm-1 mr-5 ">
-      <img src="../assets/server-solid.svg" style="width: 140%;padding-top: 35%;"/>
-    </div>
-    <div class="col-sm-4">
-      <div>
-        <div>
-          <h3 style="text-align: left;"> Backend </h3>
+    <div class="col-md-5 col-12 my-4 mx-auto py-3 px-5 card-with-shadow" style="height:100% ;">
+      <div class="row" style="height:100%;">
+        <div class="col-md-4 col-12 d-flex align-items-md-center justify-content-center" style="width:100%;">
+          <img class="skills-icon" src="../assets/code-branch-solid.svg" />
         </div>
-        <!-- FrontEnd -->
-        <div class="skills">
-          <mat-chip-list>
-            <mat-chip>.NET Core</mat-chip>
-            <mat-chip>PHP</mat-chip>
-            <mat-chip>Laravel</mat-chip>
-            <mat-chip>Flask</mat-chip>
-         </mat-chip-list>
+        <div class="col-md-8 col-12">
+          <h2 class="mt-md-2 mt-sm-2" style="text-align: left;">Backend</h2>
+          <div class="skills mt-3" style="padding-left: 1px;">
+            <mat-chip-list>
+              <mat-chip *ngFor="let skill of BackEndSkills" style="background-color:#63b7af; color: white">{{ skill }}</mat-chip>
+            </mat-chip-list>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-</div>
-<div class="container">
- <div class="row justify-content-center">
-  <div class="col-sm-10 mb-5 ">
-    <div class="col-sm-1 mr-5">
-      <img src="../assets/terminal-solid.svg" style="width: 150%; padding-top: 50%;"/>
-    </div>
-    <div class="col-sm-4 mr-5">
-      <div>
-        <div>
-          <h3 style="text-align: left;"> Languages </h3>
+    <div class="col-md-5 col-12 my-4 mx-auto py-3 px-5 card-with-shadow" style="height:100%;">
+      <div class="row" style="height:100%;">
+        <div class="col-md-4 col-12 d-flex align-items-md-center justify-content-center" style="width:100%;">
+          <img class="skills-icon" src="../assets/file-code-solid.svg" />
         </div>
-        <!-- FrontEnd -->
-        <div class="skills">
-          <mat-chip-list>
-            <mat-chip>C#</mat-chip>
-            <mat-chip>SQL</mat-chip>
-            <mat-chip>Typescript</mat-chip>
-            <mat-chip>Node.Js</mat-chip>
-         </mat-chip-list>
+        <div class="col-md-8 col-12">
+          <h2 class="mt-md-2 mt-sm-2" style="text-align: left;">Languages</h2>
+          <div class="skills mt-3" style="padding-left: 1px;">
+            <mat-chip-list>
+              <mat-chip *ngFor="let skill of LanguageSkills" style="background-color:#63b7af; color: white">{{ skill }}</mat-chip>
+            </mat-chip-list>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="col-sm-1 mr-5 ml-2 ">
-      <img src="../assets/tools-solid.svg" style="width: 140%;padding-top: 35%;"/>
-    </div>
-    <div class="col-sm-4">
-      <div>
-        <div>
-          <h3 style="text-align: left;"> Tools </h3>
+    <div class="col-12 col-md-5 my-4 mx-auto py-3 px-5 card-with-shadow" style="height:100%;">
+      <div class="row" style="height:100%;">
+        <div class="col-md-4 col-12 d-flex align-items-md-center justify-content-center" style="width:100%;">
+          <img class="skills-icon" src="../assets/tools-solid.svg" />
         </div>
-        <!-- FrontEnd -->
-        <div class="skills">
-          <mat-chip-list>
-            <mat-chip>Git</mat-chip>
-            <mat-chip>Jira</mat-chip>
-            <mat-chip>Selenium</mat-chip>
-            <mat-chip>Test kits</mat-chip>
-         </mat-chip-list>
+        <div class="col-md-8 col-12">
+          <h2 class="mt-md-2 mt-sm-2" style="text-align: left;">Tools</h2>
+          <div class="skills mt-3" style="padding-left: 1px;">
+            <mat-chip-list>
+              <mat-chip *ngFor="let skill of ToolSkills" style="background-color:#63b7af; color: white">{{ skill }}</mat-chip>
+            </mat-chip-list>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-</div>
-<br>
-<br>
-<br>
+<br />
+<br />
+<br />
 
-
-<h2> My Recent Projects</h2>
+<h2 ref=" recentProjs">My Recent Projects</h2>
 <mat-divider></mat-divider>
-<br>
+<br />
 
 <div class="container">
   <div class="row justify-content-center">
-
     <div class="col-sm">
-      <mat-card (click)="openDialog()" class="child-2">
+      <mat-card (click)="openDialog()" class="child-2" style="background-color: #e2f3f5;">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
           <mat-card-title>Secure Share</mat-card-title>
           <mat-card-subtitle>Angular Web Application</mat-card-subtitle>
         </mat-card-header>
         <div class="img-cont-small">
-          <img mat-card-image src="../assets/angular_solidBlack.png" alt="Angular Icon">
+          <img mat-card-image src="../assets/angular_solidBlack.png" alt="Angular Icon" />
         </div>
         <mat-card-content>
-          <mat-expansion-panel class="mat-elevation-z0">
-            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px;"></mat-expansion-panel-header>
-            <p>
-              Secure share is a web application, built using Angular 7 and MySQL stack. The project was to understand the
-              security
-              vulnerabilities that a web application can face. The interface aimed at providing a social platform for
-              uploading images and
-              commenting on the said posts.
+          <mat-expansion-panel class="mat-elevation-z0" style="background-color: #e2f3f5;">
+            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px"></mat-expansion-panel-header>
+            <p style="text-align: center;">
+              Secure share is a web application, built using Angular 7 and MySQL
+              stack. The project was to understand the security vulnerabilities
+              that a web application can face. The interface aimed at providing
+              a social platform for uploading images and commenting on the said
+              posts.
             </p>
-            <mat-card-footer>
+            <mat-card-footer style="text-align: center;">
               <a mat-button href="https://github.com/RishikeshJ/SecShare">GitHub</a>
             </mat-card-footer>
           </mat-expansion-panel>
         </mat-card-content>
       </mat-card>
     </div>
-    <br>
+    <br />
     <div class="col-sm">
-      <mat-card (click)="openDialog('e')" class="child-1">
+      <mat-card (click)="openDialog('e')" class="child-1" style="background-color: #e2f3f5;">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
           <mat-card-title>Lean Jobs</mat-card-title>
           <mat-card-subtitle>Android Application</mat-card-subtitle>
         </mat-card-header>
         <div class="img-cont-small">
-          <img mat-card-image src="../assets/android.png" alt="Android Icon">
+          <img mat-card-image src="../assets/android.png" alt="Android Icon" />
         </div>
         <mat-card-content>
-          <mat-expansion-panel class="mat-elevation-z0">
-            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px;"></mat-expansion-panel-header>
-            <p>
-              Lean Jobs is an app built for an NGO in Spain, the application aided in the process of job recruitment.
-              Users could upload their resume's and apply for jobs that suited their roles. The management module could
-              schedule the process of interview and post jobs and job details.
+          <mat-expansion-panel class="mat-elevation-z0" style="background-color: #e2f3f5;">
+            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px"></mat-expansion-panel-header>
+            <p style="text-align: center;">
+              Lean Jobs is an app built for an NGO in Spain, the application
+              aided in the process of job recruitment. Users could upload their
+              resume's and apply for jobs that suited their roles. The
+              management module could schedule the process of interview and post
+              jobs and job details.
             </p>
-            <mat-card-footer>
+            <mat-card-footer style="text-align: center;">
               <a mat-button href="https://github.com/RishikeshJ/leanjobs">GitHub</a>
             </mat-card-footer>
           </mat-expansion-panel>
         </mat-card-content>
       </mat-card>
     </div>
-    <br>
+    <br />
     <div class="col-sm">
-      <mat-card class="child-3">
+      <mat-card class="child-3" style="background-color: #e2f3f5;">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
           <mat-card-title>Mavs Catering</mat-card-title>
           <mat-card-subtitle>Java Application</mat-card-subtitle>
         </mat-card-header>
         <div class="img-cont-small">
-          <img mat-card-image src="../assets/java.png" alt="Placeholder Icon">
+          <img mat-card-image src="../assets/java.png" alt="Placeholder Icon" />
         </div>
         <mat-card-content>
-          <mat-expansion-panel class="mat-elevation-z0">
-            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px;"></mat-expansion-panel-header>
-            <p>
-              Mavs catering is an application designed to handle reservations for facilities around the UTA Campus, this
-              application was used for
-              Advanced Software Testing course that utilized software engineering concepts as well as software testing
-              concepts.
+          <mat-expansion-panel class="mat-elevation-z0" style="background-color: #e2f3f5;">
+            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px"></mat-expansion-panel-header>
+            <p style="text-align: center;">
+              Mavs catering is an application designed to handle reservations
+              for facilities around the UTA Campus, this application was used
+              for Advanced Software Testing course that utilized software
+              engineering concepts as well as software testing concepts.
             </p>
-            <mat-card-footer>
+            <mat-card-footer style="text-align: center;">
               <a mat-button href="https://github.com/RishikeshJ/mavs_catering">GitHub</a>
             </mat-card-footer>
           </mat-expansion-panel>
@@ -222,53 +196,55 @@
 <div class="container">
   <div class="row">
     <div class="col-md-4 col-sm-12">
-      <mat-card class="child-1">
+      <mat-card class="child-1" style="background-color: #e2f3f5;">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
           <mat-card-title>Ibras</mat-card-title>
           <mat-card-subtitle>PHP Laravel Application</mat-card-subtitle>
         </mat-card-header>
         <div class="img-cont-small">
-          <img mat-card-image src="../assets/laravel-brands.svg" style="height: 113%; width: 113%;">
+          <img mat-card-image src="../assets/laravel-brands.svg" style="height: 113%; width: 113%" />
         </div>
-        
+
         <mat-card-content>
-          <mat-expansion-panel class="mat-elevation-z0">
-            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px;"></mat-expansion-panel-header>
-            <p>
-              Ibras is a web application aimed at simulating an online food delivey system. The user could order items and
-              maintain a cart and
-              the management could add items or tend to the orders as necessary. The application was built using PHP Laravel
-              and MySQL.
+          <mat-expansion-panel class="mat-elevation-z0" style="background-color: #e2f3f5;">
+            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px"></mat-expansion-panel-header>
+            <p style="text-align: center;">
+              Ibras is a web application aimed at simulating an online food
+              delivey system. The user could order items and maintain a cart and
+              the management could add items or tend to the orders as necessary.
+              The application was built using PHP Laravel and MySQL.
             </p>
-            <mat-card-footer>
+            <mat-card-footer style="text-align: center;">
               <a mat-button href="https://github.com/RishikeshJ/wdmp5">GitHub</a>
             </mat-card-footer>
           </mat-expansion-panel>
         </mat-card-content>
       </mat-card>
     </div>
-    <br>
+    <br />
     <div class="col-md-4 col-sm-12">
-      <mat-card class="child-1">
+      <mat-card class="child-1" style="background-color: #e2f3f5;"> 
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
           <mat-card-title>Counter Game</mat-card-title>
           <mat-card-subtitle>PHP Laravel Application</mat-card-subtitle>
         </mat-card-header>
         <div class="img-cont-small">
-          <img mat-card-image src="../assets/python-brands.svg" style="height: 100%; width: 100%;" alt="Android Icon">
+          <img mat-card-image src="../assets/python-brands.svg" style="height: 100%; width: 100%" alt="Android Icon" />
         </div>
-        
+
         <mat-card-content>
-          <mat-expansion-panel class="mat-elevation-z0">
-            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px;"></mat-expansion-panel-header>
-            <p>
-              Counter Game was part of a live coding quiz. A game where two players could concurrently play a guessing game.
-              A random number would be generated and allocated to these profiles and the players would get five chances to guess
-              the number. They would get clues if the number was less than or greater than the allocated number. 
+          <mat-expansion-panel class="mat-elevation-z0" style="background-color: #e2f3f5;">
+            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px"></mat-expansion-panel-header>
+            <p style="text-align: center;">
+              Counter Game was part of a live coding quiz. A game where two
+              players could concurrently play a guessing game. A random number
+              would be generated and allocated to these profiles and the players
+              would get five chances to guess the number. They would get clues
+              if the number was less than or greater than the allocated number.
             </p>
-            <mat-card-footer>
+            <mat-card-footer style="text-align: center;">
               <a [disabled]="true" mat-button href="https://github.com/RishikeshJ/wdmp5">GitHub</a>
             </mat-card-footer>
           </mat-expansion-panel>
@@ -277,43 +253,44 @@
     </div>
 
     <div class="col-md-4 col-sm-12">
-      <mat-card class="child-1">
+      <mat-card class="child-1" style="background-color: #e2f3f5;">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
           <mat-card-title>MEAN App</mat-card-title>
           <mat-card-subtitle>MEAN stack application</mat-card-subtitle>
         </mat-card-header>
         <div class="img-cont-small">
-          <img mat-card-image src="../assets/node-brands.svg" style="height: 100%; width: 140%" alt="Android Icon">
+          <img mat-card-image src="../assets/node-brands.svg" style="height: 100%; width: 140%" alt="Android Icon" />
         </div>
-        
+
         <mat-card-content>
-          <mat-expansion-panel class="mat-elevation-z0">
-            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px;"></mat-expansion-panel-header>
-            <p>
-              This app is a result of self learning using the available resources. The application uses MongoDB, Expressjs, Node.Js, Angular 9.
-              The basic functions of the app allows CRUD application on the Employee document with 4 fields. Application uses Bootstrap and css for 
-              styling the UI.
+          <mat-expansion-panel class="mat-elevation-z0" style="background-color: #e2f3f5;">
+            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px"></mat-expansion-panel-header>
+            <p style="text-align: center;">
+              This app is a result of self learning using the available
+              resources. The application uses MongoDB, Expressjs, Node.Js,
+              Angular 9. The basic functions of the app allows CRUD application
+              on the Employee document with 4 fields. Application uses Bootstrap
+              and css for styling the UI.
             </p>
-            <mat-card-footer>
+            <mat-card-footer style="text-align: center;">
               <a [disabled]="true" mat-button href="https://github.com/RishikeshJ/crud-app">GitHub</a>
             </mat-card-footer>
           </mat-expansion-panel>
         </mat-card-content>
       </mat-card>
     </div>
-
   </div>
 </div>
-<br>
+<br />
 
 <span class="padding"></span>
-<br>
-<br>
+<br />
+<br />
 <mat-divider></mat-divider>
-<br>
-<h2> Find me at!</h2>
-<br>
+<br />
+<h2>Find me at!</h2>
+<br />
 <!--Reference : https://iconmonstr.com/twitter-3-svg/ -->
 <div class="footer">
   <a href="https://www.linkedin.com/in/rishikesh-joshi">
@@ -334,7 +311,8 @@
       0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 
       0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 
       3.581 
-      8 8c0 3.533-2.289 6.531-5.466 7.59z" /></svg>
+      8 8c0 3.533-2.289 6.531-5.466 7.59z" />
+    </svg>
   </a>
   <a href="https://twitter.com/Rishikeshaj">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -349,26 +327,32 @@
   </a>
 </div>
 
-
-
-
 <div class="col-md-12 col-sm-12">
-  <mat-card class="child-1" style=" box-shadow: none !important; padding: 0px;" >
+  <mat-card class="child-1" style="box-shadow: none !important; padding: 0px">
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
       <mat-card-subtitle>Icon References</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
-      <mat-expansion-panel class="mat-elevation-z0" style="padding: 0px;">
-        <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px;"></mat-expansion-panel-header>
+      <mat-expansion-panel class="mat-elevation-z0" style="padding: 0px">
+        <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px"></mat-expansion-panel-header>
         <a href="https://icons8.com/icon/0jTdOE7fTwMb/resume-website">Resume Website icon by Icons8</a>
-        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-        <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-        <a target="_blank" href="https://icons8.com/icons/set/screen-wiper">Wiper icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-        <mat-card-footer>
-        </mat-card-footer>
+        <div>
+          Icons made by
+          <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
+          from
+          <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </div>
+        <div>
+          Icons made by
+          <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
+          from
+          <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </div>
+        <a target="_blank" href="https://icons8.com/icons/set/screen-wiper">Wiper icon</a>
+        icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+        <mat-card-footer> </mat-card-footer>
       </mat-expansion-panel>
     </mat-card-content>
   </mat-card>
 </div>
-

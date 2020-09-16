@@ -3,7 +3,6 @@
 }
 
 .container {
-  padding-top: 4%;
   background-color: transparent;
 }
 
@@ -82,7 +81,9 @@ html {
   padding: 10px;
   align-content: center;
 }
-
+.contact-img{
+  width: 50%;
+}
 h2 {
   text-align: center;
 }

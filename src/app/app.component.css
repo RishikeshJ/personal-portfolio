@@ -58,7 +58,7 @@ html {
   background-attachment: fixed;
   /* Set a specific height */
   height: 100%;
-
+  -webkit-background-size: cover;
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;

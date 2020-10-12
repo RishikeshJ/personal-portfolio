@@ -27,3 +27,14 @@ body * {
 mat-chip {
   background-color: black;
 }
+
+.close-button{
+  float: right;
+  top:-60px;
+  right:-15px;
+}
+
+.close-button:focus{
+  outline: 0px;
+}
+

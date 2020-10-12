@@ -25,16 +25,16 @@ export class AppComponent {
   
 
   openDialog(e: string) {
-    console.log(e, "this is the log");
+    // console.log(e, "this is the log");
     if (e === "About") {
       const dialogRef = this.dialog.open(DialogContentAboutPage);
       dialogRef.afterClosed().subscribe((result) => {
-        console.log(`Dialog result: ${result}`);
+        // console.log(`Dialog result: ${result}`);
       });
     } else if (e === "Android") {
       const dialogRef = this.dialog.open(DialogContentExampleDialogComponent);
       dialogRef.afterClosed().subscribe((result) => {
-        console.log(`Dialog result: ${result}`);
+        // console.log(`Dialog result: ${result}`);
       });
     }
   }

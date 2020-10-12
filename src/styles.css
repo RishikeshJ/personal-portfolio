@@ -31,7 +31,7 @@ mat-chip {
 .close-button{
   float: right;
   top:-60px;
-  right:-15px;
+  right:-22px;
 }
 
 .close-button:focus{

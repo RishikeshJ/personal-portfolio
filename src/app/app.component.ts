@@ -80,18 +80,5 @@ export class DialogContentExampleDialogComponent {
   templateUrl: "./About.html",
 })
 export class DialogContentAboutPage {
-  imageObject: Array<object> = [
-    {
-      image: "./assets/angular.png",
-      thumbImage: "./assets/angular.png",
-      alt: "alt of image",
-      title: "title of image",
-    },
-    {
-      image: "./assets/angular.png",
-      thumbImage: "./assets/angular.png",
-      title: "Image title",
-      alt: "Image alt",
-    },
-  ];
+
 }

@@ -1,20 +1,26 @@
 <!-- Photo by Tina Dawson on Unsplash -->
 
 <div class="hero-image">
-  <mat-toolbar color="primary">
-    <mat-toolbar-row>
-      <!-- <h1> Rishikesh Joshi </h1> -->
-      <span class="example-spacer"></span>
-      <div>
-        <a mat-button (click)="openDialog('About')" >
-          <h4>About</h4>
-        </a>
-        <a href="../assets/Rishikesh Joshi Resume.pdf" mat-button>
-          <h4>Resume</h4>
-        </a>
-      </div>
-    </mat-toolbar-row>
-  </mat-toolbar>
+  <nav class="navbar navbar-expand-lg ">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a style="color: white;" mat-button (click)="openDialog('About')" >
+            <h4>About</h4>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a style="color: white;" href="../assets/Rishikesh Joshi Resume.pdf" mat-button>
+            <h4>Resume</h4>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
   <div class="container">
     <div class="panel panel-default">
       <div class="panel-body mt-4">
@@ -101,6 +107,7 @@
     </div>
   </div>
 </div>
+
 
 
 <br #work>
@@ -205,7 +212,7 @@
           <mat-card-subtitle>PHP Laravel Application</mat-card-subtitle>
         </mat-card-header>
         <div class="img-cont-small">
-          <img mat-card-image src="../assets/laravel-brands.svg" style="height: 113%; width: 113%" />
+          <img mat-card-image src="../assets/laravel-brands.svg" alt="laravel-icon" style="height: 113%; width: 113%" />
         </div>
 
         <mat-card-content>
@@ -285,7 +292,8 @@
   </div>
 </div>
 <br />
-
+<h2>Weekend Projects</h2>
+<mat-divider></mat-divider>
 <span class="padding"></span>
 <br />
 <br />

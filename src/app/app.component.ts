@@ -18,7 +18,7 @@ export class AppComponent {
   
   title = "personal-porfolio";
   frontEndSkills = ["Angular", "HTML5", "Bootstrap", "CSS"];
-  BackEndSkills = ['.NET Core', 'PHP', 'Laravel','Flask'];
+  BackEndSkills = ['.NET Core', 'PHP', 'Flask'];
   LanguageSkills = ['C#', 'SQL', 'Typescript','Node.Js'];
   ToolSkills = ['Git','Jira','Selenium','Figma','Postman']
   constructor(public dialog: MatDialog) {}

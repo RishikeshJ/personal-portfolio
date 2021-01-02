@@ -9,6 +9,7 @@ import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatBu
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   entryComponents:[
@@ -23,6 +24,7 @@ import { NgImageSliderModule } from 'ng-image-slider';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatSidenavModule,

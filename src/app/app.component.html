@@ -325,6 +325,18 @@
   </div>
 </div>
 <br />
+<mat-divider></mat-divider>
+<h2> Here's what I recently found interesting on the web</h2>
+<br>
+<div class="container">
+  <div class="col-md-12">
+    <div *ngFor="let item of sortData; let i=index">
+      <div class="mt-2" *ngIf="i < 5">
+        <a target="_blank" href="{{item.url}}"> {{item.linkName}} </a> - 
+      </div>
+    </div>
+  </div>
+</div>
 <!-- <h2>Weekend Projects</h2>
 <mat-divider></mat-divider> -->
 <span class="padding"></span>
@@ -332,7 +344,7 @@
 <br />
 <mat-divider></mat-divider>
 <br #contact>
-<h2>Find me at!</h2>
+<h2>Find me at</h2>
 
 <!--Reference : https://iconmonstr.com/twitter-3-svg/ -->
 

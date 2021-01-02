@@ -1,5 +1,6 @@
-import { Component, ElementRef, NgModule, ViewChild } from "@angular/core";
+import { Component, ElementRef, NgModule, OnInit, ViewChild } from "@angular/core";
 import { MatDialog, MatDialogModule } from "@angular/material/dialog";
+import { BookmarksDataService } from "./services/bookmarks-data.service";
 
 @Component({
   selector: "app-root",
@@ -10,19 +11,36 @@ import { MatDialog, MatDialogModule } from "@angular/material/dialog";
   imports: [MatDialogModule, MatDialog],
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
   @ViewChild('work', {static: false})
   work: ElementRef;
   @ViewChild('contact', {static: false})
   contact: ElementRef;
-  
+  bookmarksArray = [];
   title = "personal-porfolio";
   frontEndSkills = ["Angular", "HTML5", "Bootstrap", "CSS"];
-  BackEndSkills = ['.NET Core', 'PHP', 'Flask'];
+  BackEndSkills = ['.NET Core', 'PHP', 'Flask','Serverless'];
   LanguageSkills = ['C#', 'SQL', 'Typescript','Node.Js'];
   ToolSkills = ['Git','Jira','Selenium','Figma','Postman']
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog , private bookmarksService : BookmarksDataService) {}
   
+  ngOnInit(){
+    this.bookmarksService.getBookmarks().subscribe((res:[])=>{
+      console.log(res);
+      this.bookmarksArray = res;
+    })
+  }
+
+  get sortData() {
+    return this.bookmarksArray.sort((a, b) => {
+      return <any>new Date(b.DateAdded) - <any>new Date(a.DateAdded);
+    });
+  }
+  // get sortData() {
+  //   return this.data.sort((a, b) => {
+  //     return <any>new Date(b.CREATE_TS) - <any>new Date(a.CREATE_TS);
+  //   });
+  // }
 
   openDialog(e: string) {
     // console.log(e, "this is the log");

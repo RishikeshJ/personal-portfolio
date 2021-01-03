@@ -118,7 +118,7 @@
 <div class="container" >
   <div class="row justify-content-center">
     <div class="col-sm mb-5 mb-md-0" >
-      <mat-card  class="child-2" style="background-color: #e2f3f5;">
+      <mat-card  class="child-2" style="background-color: #e2f3f5;" (click)="panelN._toggle()">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
           <mat-card-title>Secure Share</mat-card-title>
@@ -129,7 +129,7 @@
         </div>
         <mat-card-content>
           <mat-expansion-panel class="mat-elevation-z0" style="background-color: #e2f3f5;">
-            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px"></mat-expansion-panel-header>
+            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px" #panelN (click)="panelN._toggle()"></mat-expansion-panel-header>
             <p style="text-align: center;">
               Secure share is a web application, built using Angular 7 and MySQL
               stack. The project was to understand the security vulnerabilities
@@ -146,7 +146,7 @@
     </div>
     <br />
     <div class="col-sm mb-5 mb-md-0">
-      <mat-card (click)="openDialog('e')" class="child-1" style="background-color: #e2f3f5;">
+      <mat-card class="child-1" style="background-color: #e2f3f5;" (click)="panelM._toggle()">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
           <mat-card-title>Lean Jobs</mat-card-title>
@@ -157,7 +157,7 @@
         </div>
         <mat-card-content>
           <mat-expansion-panel class="mat-elevation-z0" style="background-color: #e2f3f5;">
-            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px"></mat-expansion-panel-header>
+            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px"  #panelM (click)="panelM._toggle()"></mat-expansion-panel-header>
             <p style="text-align: center;">
               Lean Jobs is an app built for an NGO in Spain, the application
               aided in the process of job recruitment. Users could upload their
@@ -174,7 +174,7 @@
     </div>
     <br />
     <div class="col-sm  mb-5 mb-md-0">
-      <mat-card class="child-3" style="background-color: #e2f3f5;">
+      <mat-card class="child-3" style="background-color: #e2f3f5;" (click)="panelL._toggle()">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
           <mat-card-title>Mavs Catering</mat-card-title>
@@ -185,7 +185,7 @@
         </div>
         <mat-card-content>
           <mat-expansion-panel class="mat-elevation-z0" style="background-color: #e2f3f5;">
-            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px"></mat-expansion-panel-header>
+            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px" #panelL (click)="panelL._toggle()"></mat-expansion-panel-header>
             <p style="text-align: center;">
               Mavs catering is an application designed to handle reservations
               for facilities around the UTA Campus, this application was used
@@ -205,7 +205,7 @@
 <div class="container mt-4" >
   <div class="row">
     <div class="col-md-4 col-sm-12 mb-md-0 mb-5">
-      <mat-card class="child-1" style="background-color: #e2f3f5;">
+      <mat-card class="child-1" style="background-color: #e2f3f5;" (click)="panelK._toggle()">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
           <mat-card-title>Ibras</mat-card-title>
@@ -217,7 +217,7 @@
 
         <mat-card-content>
           <mat-expansion-panel class="mat-elevation-z0" style="background-color: #e2f3f5;">
-            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px"></mat-expansion-panel-header>
+            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px" #panelK (click)="panelK._toggle()"></mat-expansion-panel-header>
             <p style="text-align: center;">
               Ibras is a web application aimed at simulating an online food
               delivey system. The user could order items and maintain a cart and
@@ -233,7 +233,7 @@
     </div>
     <br />
     <div class="col-md-4 col-sm-12 mb-md-0 mb-5">
-      <mat-card class="child-1" style="background-color: #e2f3f5;"> 
+      <mat-card class="child-1" style="background-color: #e2f3f5;" (click)="panelJ._toggle()"> 
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
           <mat-card-title>Counter Game</mat-card-title>
@@ -245,7 +245,7 @@
 
         <mat-card-content>
           <mat-expansion-panel class="mat-elevation-z0" style="background-color: #e2f3f5;">
-            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px"></mat-expansion-panel-header>
+            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px"  #panelJ (click)="panelJ._toggle()"></mat-expansion-panel-header>
             <p style="text-align: center;">
               Counter Game was part of a live coding quiz. A game where two
               players could concurrently play a guessing game. A random number
@@ -262,7 +262,7 @@
     </div>
 
     <div class="col-md-4 col-sm-12 mb-md-0 mb-5 ">
-      <mat-card class="child-1" style="background-color: #e2f3f5;">
+      <mat-card class="child-1" style="background-color: #e2f3f5;" (click)="panelI._toggle()">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
           <mat-card-title>MEAN App</mat-card-title>
@@ -274,7 +274,7 @@
 
         <mat-card-content>
           <mat-expansion-panel class="mat-elevation-z0" style="background-color: #e2f3f5;">
-            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px"></mat-expansion-panel-header>
+            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px" #panelI (click)="panelI._toggle()"></mat-expansion-panel-header>
             <p style="text-align: center;">
               This app is a result of self learning using the available
               resources. The application uses MongoDB, Expressjs, Node.Js,
@@ -295,7 +295,7 @@
 <div class="container mt-4" >
   <div class="row">
     <div class="col-md-4 col-sm-12 mb-md-0 mb-5">
-      <mat-card class="child-1" style="background-color: #e2f3f5;">
+      <mat-card class="child-1" style="background-color: #e2f3f5;" (click)="panelH._toggle()">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
           <mat-card-title>Oneclick</mat-card-title>
@@ -307,7 +307,7 @@
 
         <mat-card-content>
           <mat-expansion-panel class="mat-elevation-z0" style="background-color: #e2f3f5;">
-            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px"></mat-expansion-panel-header>
+            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px" #panelH (click)="panelH._toggle()"></mat-expansion-panel-header>
             <p style="text-align: center;">
               Oneclick is an application that was designed as a one stop shop for students at UT Arlington. The application
               included a realtime Twitter feed from university twitter account and Job search component. The main components of the application where
@@ -325,14 +325,15 @@
   </div>
 </div>
 <br />
-<mat-divider></mat-divider>
-<h2> Here's what I recently found interesting on the web</h2>
+
+<h2 > Here's what I recently found interesting on the web</h2>
+<mat-divider class="mt-3"></mat-divider>
 <br>
 <div class="container">
   <div class="col-md-12">
     <div *ngFor="let item of sortData; let i=index">
       <div class="mt-2" *ngIf="i < 5">
-        <a target="_blank" href="{{item.url}}"> {{item.linkName}} </a> - 
+        <a target="_blank" href="{{item.url}}"> 🚀 {{item.linkName}} </a> - 
       </div>
     </div>
   </div>
@@ -340,11 +341,10 @@
 <!-- <h2>Weekend Projects</h2>
 <mat-divider></mat-divider> -->
 <span class="padding"></span>
-<br />
-<br />
-<mat-divider></mat-divider>
+
 <br #contact>
 <h2>Find me at</h2>
+<mat-divider class="mt-3"></mat-divider>
 
 <!--Reference : https://iconmonstr.com/twitter-3-svg/ -->
 

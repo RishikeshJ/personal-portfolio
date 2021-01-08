@@ -10,6 +10,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { GoogleAnalyticsService } from './google-analytics.service';
 
 @NgModule({
   entryComponents:[
@@ -38,7 +39,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     NgImageSliderModule,
     MatExpansionModule
   ],
-  providers: [],
+  providers: [GoogleAnalyticsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,6 +1,9 @@
 import { Component, ElementRef, NgModule, OnInit, ViewChild } from "@angular/core";
 import { MatDialog, MatDialogModule } from "@angular/material/dialog";
+import { NavigationEnd, Router } from "@angular/router";
 import { BookmarksDataService } from "./services/bookmarks-data.service";
+import {GoogleAnalyticsService} from "./google-analytics.service"
+declare let gtag: Function;
 
 @Component({
   selector: "app-root",
@@ -10,7 +13,6 @@ import { BookmarksDataService } from "./services/bookmarks-data.service";
 @NgModule({
   imports: [MatDialogModule, MatDialog],
 })
-
 export class AppComponent implements OnInit {
   @ViewChild('work', {static: false})
   work: ElementRef;
@@ -22,9 +24,26 @@ export class AppComponent implements OnInit {
   BackEndSkills = ['.NET Core', 'PHP', 'Flask','Serverless'];
   LanguageSkills = ['C#', 'SQL', 'Typescript','Node.Js'];
   ToolSkills = ['Git','Jira','Selenium','Figma','Postman']
-  constructor(public dialog: MatDialog , private bookmarksService : BookmarksDataService) {}
+
+
+  constructor(public dialog: MatDialog , private bookmarksService : BookmarksDataService, public router: Router, private googleAnalyticsService: GoogleAnalyticsService) {
+    
+    this.router.events.subscribe(event => {
+      if(event instanceof NavigationEnd){
+
+        console.log(event.urlAfterRedirects);
+        gtag('config', 'G-4VM2PTZLEG', {'page_path': event.urlAfterRedirects});
+      }
+    })
+  }
+  
   
   ngOnInit(){
+    
+    this
+     .googleAnalyticsService
+     .eventEmitter("page_load", "shop", "cart", "click", 10);
+
     this.bookmarksService.getBookmarks().subscribe((res:[])=>{
       console.log(res);
       this.bookmarksArray = res;

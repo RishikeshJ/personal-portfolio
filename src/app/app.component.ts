@@ -42,7 +42,7 @@ export class AppComponent implements OnInit {
     
     this
      .googleAnalyticsService
-     .eventEmitter("page_load", "shop", "cart", "click", 10);
+     .eventEmitter("page_load", "onInit", "window_load", "visit", 1);
 
     this.bookmarksService.getBookmarks().subscribe((res:[])=>{
       console.log(res);

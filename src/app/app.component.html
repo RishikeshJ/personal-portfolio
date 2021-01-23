@@ -45,7 +45,7 @@
 <mat-divider></mat-divider>
 <div class="container">
   <div class="row px-0 d-flex mb-5 justify-content-between" style="width: 100%;">
-    <div class="col-md-5 col-12 my-4 px-5 mx-auto card-with-shadow mb-4 py-3" style="height:100% ;">
+    <div class="col-md-5 col-12 my-4 px-3 mx-auto card-with-shadow mb-4 py-3" style="height:100% ;">
       <div class="row" style="height:100%;">
         <div class="col-md-4 col-12 d-flex align-items-md-center justify-content-center" style="width:100%;">
           <img class="skills-icon" alt="laptop-icon" src="../assets/laptop-code-solid.svg" />
@@ -60,7 +60,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-5 col-12 my-4 mx-auto py-3 px-5 card-with-shadow" style="height:100% ;">
+    <div class="col-md-5 col-12 my-4 mx-auto py-3 px-3 card-with-shadow" style="height:100% ;">
       <div class="row" style="height:100%;">
         <div class="col-md-4 col-12 d-flex align-items-md-center justify-content-center" style="width:100%;">
           <img class="skills-icon" alt="version-icon" src="../assets/code-branch-solid.svg" />
@@ -75,7 +75,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-5 col-12 my-4 mx-auto py-3 px-5 card-with-shadow" style="height:100%;">
+    <div class="col-md-5 col-12 my-4 mx-auto py-3 px-3 card-with-shadow" style="height:100%;">
       <div class="row" style="height:100%;">
         <div class="col-md-4 col-12 d-flex align-items-md-center justify-content-center" style="width:100%;">
           <img class="skills-icon" alt="file-icon" src="../assets/file-code-solid.svg" />
@@ -90,7 +90,7 @@
         </div>
       </div>
     </div>
-    <div class="col-12 col-md-5 my-4 mx-auto py-3 px-5 card-with-shadow" style="height:100%;">
+    <div class="col-12 col-md-5 my-4 mx-auto py-3 px-3 card-with-shadow" style="height:100%;">
       <div class="row" style="height:100%;">
         <div class="col-md-4 col-12 d-flex align-items-md-center justify-content-center" style="width:100%;">
           <img class="skills-icon" alt="tools-icon" src="../assets/tools-solid.svg" />
@@ -322,8 +322,38 @@
         </mat-card-content>
       </mat-card>
     </div>
+
+    <div class="col-md-4 col-sm-12 mb-md-0 mb-5">
+      <mat-card class="child-1" style="background-color: #e2f3f5;" (click)="panelF._toggle()">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>GitHub Jobs Client</mat-card-title>
+          <mat-card-subtitle>Vue Web Application</mat-card-subtitle>
+        </mat-card-header>
+        <div class="img-cont-exsmall">
+          <img mat-card-image src="../assets/vuejs-brands (1).svg" alt="vue-icon" />
+        </div>
+
+        <mat-card-content>
+          <mat-expansion-panel class="mat-elevation-z0" style="background-color: #e2f3f5;">
+            <mat-expansion-panel-header style="position: absolute; right: 0px; top: 0px" #panelF (click)="panelF._toggle()"></mat-expansion-panel-header>
+            <p style="text-align: center;">
+              GitHub jobs is a client that fetches jobs and its details from the open GitHub API. The motive of this application was to recognize
+              the importance of test driven development. A serverless function was used to test the UI of this application, the serverless function 
+              leverages Puppeteer library to test the UI and send out a feedback in the form of an object. Since this generic function can be consumed in 
+              other apps too, it allows for further integration of CI/CD components 
+            </p>
+            <mat-card-footer style="text-align: center;">
+              <a mat-button href="https://github.com/RishikeshJ/github-jobs-vue/">GitHub</a>
+            </mat-card-footer>
+          </mat-expansion-panel>
+        </mat-card-content>
+      </mat-card>
+    </div>
   </div>
 </div>
+
+
 <br />
 
 <h2 > Here's what I recently found interesting on the web</h2>

@@ -20,10 +20,10 @@ export class AppComponent implements OnInit {
   contact: ElementRef;
   bookmarksArray = [];
   title = "personal-porfolio";
-  frontEndSkills = ["Angular", "HTML5", "Bootstrap", "CSS"];
-  BackEndSkills = ['.NET Core', 'PHP', 'Flask','Serverless'];
+  frontEndSkills = ["Angular", "Vue.Js" , "HTML5", "Bootstrap", "CSS"];
+  BackEndSkills = ['.NET Core', 'PHP', 'Flask', 'Serverless'];
   LanguageSkills = ['C#', 'SQL', 'Typescript','Node.Js'];
-  ToolSkills = ['Git','Jira','Selenium','Figma','Postman']
+  ToolSkills = ['Git', 'Puppeteer' ,'Jira','Selenium', 'Figma','Postman']
 
 
   constructor(public dialog: MatDialog , private bookmarksService : BookmarksDataService, public router: Router, private googleAnalyticsService: GoogleAnalyticsService) {
